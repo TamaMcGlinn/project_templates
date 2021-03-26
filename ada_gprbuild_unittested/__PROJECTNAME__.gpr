@@ -1,0 +1,7 @@
+
+aggregate project __PROJECTNAME__ is
+
+   for Project_Files use ("core/core.gpr",
+                          "testsuite/testsuite.gpr");
+
+end __PROJECTNAME__;
