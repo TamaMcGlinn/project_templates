@@ -1,0 +1,88 @@
+---
+Checks: >
+    *,
+    -altera-struct-pack-align,
+    -fuchsia-default-arguments-calls,
+    -fuchsia-default-arguments-declarations,
+    -fuchsia-overloaded-operator,
+    -fuchsia-trailing-return,
+    -google-runtime-references,
+    -llvm-header-guard,
+    -llvm-qualified-auto,
+    -llvmlibc-callee-namespace,
+    -llvmlibc-implementation-in-namespace,
+    -llvmlibc-restrict-system-libc-headers,
+    -misc-misplaced-const,
+    -modernize-pass-by-value,
+    -modernize-return-braced-init-list,
+    -modernize-use-default-member-init,
+    -modernize-use-trailing-return-type,
+    -mpi-buffer-deref,
+    -mpi-type-mismatch,
+    -readability-avoid-const-params-in-decls,
+    -readability-function-cognitive-complexity,
+    -readability-qualified-auto,
+    -readability-redundant-member-init,
+    -readability-static-accessed-through-instance,
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
+AnalyzeTemporaryDtors: false
+FormatStyle:     none
+CheckOptions:
+  - key:             cppcoreguidelines-avoid-magic-numbers.IgnoredIntegerValues
+    value:           '1;2;3;4'
+  - key:             cppcoreguidelines-avoid-magic-numbers.IgnoredFloatingPointValues
+    value:           '0.5;1.0;2.0;100.0'
+  - key:             readability-magic-numbers.IgnoredIntegerValues
+    value:           '1;2;3;4'
+  - key:             readability-magic-numbers.IgnoredFloatingPointValues
+    value:           '0.5;1.0;2.0;100.0'
+  - key:             readability-identifier-naming.ClassCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.ClassMemberCase
+    value:           lower_case
+  - key:             readability-identifier-naming.ClassMemberSuffix
+    value:           '_'
+  - key:             readability-identifier-naming.ConstexprVariableCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.ConstexprVariablePrefix
+    value:           'k'
+  - key:             readability-identifier-naming.EnumCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.EnumConstantCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.EnumConstantPrefix
+    value:           'k'
+  - key:             readability-identifier-naming.FunctionCase
+    value:           camelBack
+  - key:             readability-identifier-naming.MemberCase
+    value:           lower_case
+  - key:             readability-identifier-naming.MethodCase
+    value:           camelBack
+  - key:             readability-identifier-naming.NamespaceCase
+    value:           lower_case
+  - key:             readability-identifier-naming.ParameterCase
+    value:           lower_case
+  - key:             readability-identifier-naming.PrivateMemberSuffix
+    value:           '_'
+  - key:             readability-identifier-naming.ProtectedMemberSuffix
+    value:           '_'
+  - key:             readability-identifier-naming.StaticConstantCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.StaticConstantPrefix
+    value:           'k'
+  - key:             readability-identifier-naming.StructCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.TemplateParameterCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.TypedefCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.TypeAliasCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.UnionCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.ValueTemplateParameterCase
+    value:           lower_case
+  - key:             readability-identifier-naming.VariableCase
+    value:           lower_case
+...
