@@ -1,2 +1,2 @@
 all:
-	clang++ -Weverything main.cpp
+	clang++ -std=c++14 -Weverything -Wno-c++98-compat main.cpp
