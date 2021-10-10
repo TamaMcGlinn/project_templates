@@ -4,4 +4,6 @@ aggregate project __PROJECTNAME__ is
    for Project_Files use ("core/core.gpr",
                           "testsuite/testsuite.gpr");
 
+   for Create_Missing_Dirs use "True";
+
 end __PROJECTNAME__;
