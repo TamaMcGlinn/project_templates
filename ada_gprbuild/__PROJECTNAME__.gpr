@@ -15,7 +15,7 @@ project __PROJECTNAME__ is
    package Compiler is
       for Default_Switches ("ada") use
         ("-g", "-gnatQ", "-O1", "-gnatf", "-gnato",
-         "-gnatwa.Xe", "-gnaty");
+         "-gnatwa.Xe");
    end Compiler;
 
    package Builder is
