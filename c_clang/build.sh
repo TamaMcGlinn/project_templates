@@ -12,11 +12,14 @@ if [ $build_type == Debug ]; then
     flags+=$debug_flags
 else
     flags+=$release_flags
-fi    
+fi
 
 flags+=" -D${macro_prefix}VERSION_MAJOR=$version_major"
 flags+=" -D${macro_prefix}VERSION_MINOR=$version_minor"
 flags+=" -D${macro_prefix}VERSION_BUILD=$version_build"
+
+# Make directories if they don't already exist
+mkdir -p Output
 
 # Build Target
 $compiler $sources $flags -o $target
