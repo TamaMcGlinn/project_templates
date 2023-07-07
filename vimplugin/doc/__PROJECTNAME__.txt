@@ -1,0 +1,40 @@
+*__PROJECTNAME__*  A plugin for Vim / NeoVim
+__PROJECTNAME__                                                 *__PROJECTNAME__*
+
+Author:  TamaMcGlinn <https://github.com/TamaMcGlinn>
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+INTRODUCTION                                                  *__PROJECTNAME__-intro*
+
+__PROJECTNAME__ is ...
+
+==============================================================================
+PREREQUISITES                                              *__PROJECTNAME__-prereqs*
+
+Flog supports Vim 8, Vim 9, and Neovim.
+
+==============================================================================
+COMMANDS                                                   *__PROJECTNAME__-commands*
+
+------------------------------------------------------------------------------
+FOO COMMANDS                                        **
+
+------------------------------------------------------------------------------
+BAR COMMANDS                                          **
+
+==============================================================================
+MAPPINGS                                                 *__PROJECTNAME__-mappings*
+
+==============================================================================
+SETTINGS                                                 *__PROJECTNAME__-settings*
+
+==============================================================================
+FUNCTIONS                                                *__PROJECTNAME__-functions*
+
+                                                                 *__PROJECTNAME__#Foo()*
+__PROJECTNAME__#Foo()
+
+  Runs {command}.
+
+ vim:tw=78:ts=8:ft=help
