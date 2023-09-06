@@ -114,7 +114,6 @@ IncludeIsMainRegex: '(_test)?$'
 IndentCaseBlocks: true
 IncludeIsMainSourceRegex: ''
 IndentCaseLabels: true
-IndentCaseBlocks: false
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentExternBlock: AfterExternBlock
